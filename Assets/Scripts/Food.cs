@@ -17,7 +17,7 @@ public class Food : MonoBehaviour {
 	{
 		if (collision.collider.tag == "Floor")
 		{
-			Destroy (gameObject, 5f);
+			Destroy (gameObject, Random.Range(0,3));
 		}
 	}
 }
