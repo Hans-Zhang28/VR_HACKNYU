@@ -22,7 +22,6 @@ public class FoodSpawner : MonoBehaviour {
 				currentTime -= Time.deltaTime;
 			} else {
 				makeItem (foods [Random.Range (0, foods.Length)]);
-				Debug.Log ("Making Item! " + itemsToDrop);
 				currentTime = dropDelay;
 				itemsToDrop--;
 			}
@@ -31,7 +30,8 @@ public class FoodSpawner : MonoBehaviour {
 
 	void makeItem(GameObject item) {
 		Vector3 pos = spawnPoints [Random.Range (0, spawnPoints.Length)].position;
-		GameObject newItem = Instantiate (item, pos, Quaternion.identity) as GameObject;
-		//newItem.GetComponent<Transform>().position = pos;
+		GameObject newItem = Instantiate (item, pos, Random.rotation) as GameObject;
+		Vector3 force = new Vector3 (Random.Range (0, 100), Random.Range (0, 100), Random.Range (0, 100));
+		newItem.GetComponent<Rigidbody>().AddForce(force);
 	}
 }
