@@ -8,13 +8,14 @@ public class FoodSpawner : MonoBehaviour {
 
 	public int itemsToDrop = 100;
 	public float dropDelay = 1f;
-	private float currentTime = 0f;
+	public float currentTime = 0f;
 	private bool droppingItems = false;
 
 	// Use this for initialization
 	void Start () {
 		currentTime = dropDelay;
 		droppingItems = true;
+		dropItems ();
 	}
 	
 	// Update is called once per frame
@@ -28,14 +29,16 @@ public class FoodSpawner : MonoBehaviour {
 		while (itemsToDrop > 0) {
 			if (currentTime < 0) {
 				makeItem (foods [Random.Range (0, foods.Length)]);
+				currentTime = dropDelay;
+				itemsToDrop--;
 			}
 		}
+		droppingItems = false;
 	}
 
-	GameObject makeItem(GameObject item) {
-		GameObject newItem = Instantiate (item);
+	void makeItem(GameObject item) {
 		Vector3 pos = spawnPoints [Random.Range (0, spawnPoints.Length)].position;
-		newItem.GetComponent<Transform>().position = pos;
-		return newItem;
+		GameObject newItem = Instantiate (item, pos, Quaternion.identity);
+		//newItem.GetComponent<Transform>().position = pos;
 	}
 }
