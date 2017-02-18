@@ -36,8 +36,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4243617366965950}
-  - component: {fileID: 135866694865035910}
-  - component: {fileID: 54921131878710506}
+  - component: {fileID: 54385477469108336}
+  - component: {fileID: 65248456988779644}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1246855278415824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.650653, y: -1.1406122, z: -4.7079735}
+  m_LocalPosition: {x: 0.6504909, y: 1.4621414, z: -7.0109982}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4981542124169590}
@@ -179,7 +179,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494291124677850}
   m_Mesh: {fileID: 4300000, guid: 094627802cc8b7849aed1eb1a64bbe75, type: 3}
---- !u!54 &54921131878710506
+--- !u!54 &54385477469108336
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -194,8 +194,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &135866694865035910
-SphereCollider:
+--- !u!65 &65248456988779644
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -204,5 +204,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.039683327, y: 0.11103594, z: 0.29322422}
+  m_Center: {x: -0.12886566, y: 0.026116252, z: -0.35338807}
