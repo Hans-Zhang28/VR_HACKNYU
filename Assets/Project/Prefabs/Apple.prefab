@@ -38,7 +38,11 @@ GameObject:
   - component: {fileID: 4243617366965950}
   - component: {fileID: 54385477469108336}
   - component: {fileID: 65248456988779644}
+<<<<<<< HEAD
   - component: {fileID: 114326041375528526}
+=======
+  - component: {fileID: 114907551399610960}
+>>>>>>> 61b0c3b03dbd56a352a89796eae91a2f5056ca03
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -207,7 +211,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.039683327, y: 0.11103594, z: 0.29322422}
   m_Center: {x: -0.12886566, y: 0.026116252, z: -0.35338807}
---- !u!114 &114326041375528526
+--- !u!114 &114907551399610960
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
