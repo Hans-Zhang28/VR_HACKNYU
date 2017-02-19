@@ -15,9 +15,10 @@ public class Food : MonoBehaviour {
 		
 	void OnCollisionEnter (Collision collision)
 	{
-		if (collision.collider.tag == "Floor")
-		{
-			Destroy (gameObject, Random.Range(0,3));
+		if (collision.collider.tag == "Floor") {
+			Destroy (gameObject, Random.Range (0, 3));
+		} else if (collision.collider.tag == "Hand") {
+			GetComponent<Transform>().SetParent (collision.gameObject.transform);
 		}
 	}
 }
