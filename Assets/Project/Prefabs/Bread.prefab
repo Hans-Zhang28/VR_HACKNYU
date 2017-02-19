@@ -109,11 +109,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08823871, y: 0.07681323, z: 0.21960545}
   m_Center: {x: 0.002525568, y: 0.049072266, z: 0.011142254}
-<<<<<<< HEAD
 --- !u!114 &114551361055938722
-=======
 --- !u!114 &114124539647203222
->>>>>>> 61b0c3b03dbd56a352a89796eae91a2f5056ca03
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
