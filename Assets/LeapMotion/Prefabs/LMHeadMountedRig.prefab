@@ -46,11 +46,11 @@ GameObject:
   - component: {fileID: 11412806}
   m_Layer: 0
   m_Name: LMHeadMountedRig
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &173622
 GameObject:
   m_ObjectHideFlags: 1
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 114000012615819676}
   m_Layer: 0
   m_Name: CapsuleHand_R
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 114000013295834632}
   m_Layer: 0
   m_Name: CapsuleHand_L
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -582,9 +582,10 @@ GameObject:
   - component: {fileID: 4309763617635698}
   - component: {fileID: 114923246781475656}
   - component: {fileID: 114470245092348698}
+  - component: {fileID: 65204431500705668}
   m_Layer: 0
   m_Name: Rigid_Right
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -752,9 +753,10 @@ GameObject:
   - component: {fileID: 4194530959756008}
   - component: {fileID: 114157654956402656}
   - component: {fileID: 114419571973729106}
+  - component: {fileID: 65134105065930588}
   m_Layer: 0
   m_Name: Rigid_Left
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2448,6 +2450,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06, y: 0.02, z: 0.07}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65134105065930588
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1383674432863734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65153639942314956
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2459,6 +2473,18 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.06, y: 0.02, z: 0.07}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65204431500705668
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1212083534243120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114000011684287588
 MonoBehaviour:
@@ -2719,7 +2745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862e1c8d784604a8ba021be6abc6470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerType: 1
+  fingerType: 4
   bones:
   - {fileID: 0}
   - {fileID: 0}
@@ -2757,7 +2783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862e1c8d784604a8ba021be6abc6470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerType: 1
+  fingerType: 3
   bones:
   - {fileID: 0}
   - {fileID: 0}
@@ -2826,13 +2852,13 @@ MonoBehaviour:
   handedness: 0
   handModelPalmWidth: 0.085
   fingers:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  palm: {fileID: 0}
-  forearm: {fileID: 0}
+  - {fileID: 114066203377504806}
+  - {fileID: 114399967676220288}
+  - {fileID: 114730729027520672}
+  - {fileID: 114376278301592754}
+  - {fileID: 114691664617809838}
+  palm: {fileID: 4604739056400006}
+  forearm: {fileID: 4657153789570224}
   wristJoint: {fileID: 0}
   elbowJoint: {fileID: 0}
   filtering: 0.5
@@ -2850,13 +2876,13 @@ MonoBehaviour:
   handedness: 1
   handModelPalmWidth: 0.085
   fingers:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  palm: {fileID: 0}
-  forearm: {fileID: 0}
+  - {fileID: 114404953836362144}
+  - {fileID: 114159441336874650}
+  - {fileID: 114614538039451174}
+  - {fileID: 114656389505131838}
+  - {fileID: 114261259611197580}
+  palm: {fileID: 4211602562056918}
+  forearm: {fileID: 4676927275838050}
   wristJoint: {fileID: 0}
   elbowJoint: {fileID: 0}
   filtering: 0.5
@@ -2871,7 +2897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862e1c8d784604a8ba021be6abc6470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerType: 1
+  fingerType: 2
   bones:
   - {fileID: 0}
   - {fileID: 0}
@@ -2893,7 +2919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862e1c8d784604a8ba021be6abc6470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerType: 1
+  fingerType: 3
   bones:
   - {fileID: 0}
   - {fileID: 0}
@@ -2948,7 +2974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862e1c8d784604a8ba021be6abc6470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerType: 1
+  fingerType: 4
   bones:
   - {fileID: 0}
   - {fileID: 0}
@@ -2970,7 +2996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862e1c8d784604a8ba021be6abc6470a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fingerType: 1
+  fingerType: 2
   bones:
   - {fileID: 0}
   - {fileID: 0}
@@ -3267,8 +3293,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.0205
+  m_Height: 0.29099998
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136694856643762456
@@ -3397,8 +3423,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.0205
+  m_Height: 0.29099998
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136936089922127720
